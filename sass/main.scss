@@ -50,6 +50,7 @@ body {
 h1 {
   font-family: $font-family-emphasis;
   font-size: $font-size-emphasis;
+	color: $color-neutral-dark-blue;
 }
 
 .container {
@@ -123,6 +124,12 @@ h1 {
 		color: $color-neutral-white;
 		font-weight: $font-weight-bold;
 		border-radius: 6px;
+		transition: background-color 200ms ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			background-color: darken($color: $color-primary-dark-cyan, $amount: 15%);
+		}
 	}
 }
 

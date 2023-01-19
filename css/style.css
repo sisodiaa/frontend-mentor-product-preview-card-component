@@ -33,6 +33,7 @@ body * {
 h1 {
   font-family: "Fraunces", serif;
   font-size: 2rem;
+  color: hsl(212deg, 21%, 14%);
 }
 
 .container {
@@ -98,6 +99,11 @@ h1 {
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
   border-radius: 6px;
+  transition: background-color 200ms ease-in-out;
+}
+.card__cta:hover {
+  cursor: pointer;
+  background-color: #244c3d;
 }
 
 @media (min-width: 41rem) {
